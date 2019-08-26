@@ -14,7 +14,7 @@ void savebmp(char *name,uchar *buffer,int x,int y) {
                     0,0,0,54,0,0,0,40,0,0,0,x&255,x>>8,0,0,y&255,y>>8,0,0,1,0,24,0,0,0,0,0,0,
                     0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 	fwrite(header,1,54,f);
-	fwrite(buffer,1,XSIZE*YSIZE*3,f);
+	fwrite(buffer,1,x*y*3,f);
 	fclose(f);
 }
 
