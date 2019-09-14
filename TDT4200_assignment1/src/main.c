@@ -7,7 +7,7 @@
 
 int main() {
 	uchar *image = calloc(XSIZE * YSIZE * 3, 1); // Three uchars per pixel (RGB)
-	readbmp("before.bmp", image);
+	readbmp("resource/before.bmp", image);
 
 	// Alter the image here
 
