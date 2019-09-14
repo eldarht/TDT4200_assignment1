@@ -14,3 +14,14 @@ From the root folder:
 ```
 	./build/bin/bitmap
 ```
+
+## Task completion
+
+- [ ] Alteration of choice 
+	- [ ] Inverting color
+	- [ ] Flipping image
+	- [ ] Remapping color
+	- [ ] Other
+- [ ] Resize to double the size
+- [ ] Changing color
+- [X] CMake or makefile
