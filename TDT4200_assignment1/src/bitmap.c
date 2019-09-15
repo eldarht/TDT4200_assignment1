@@ -43,3 +43,24 @@ void readbmp(char* filename, uchar* array) {
 	}
 	fclose(img); //close the file
 }
+
+
+void scale(uchar *image, int sizeX, int sizeY, int factorX, int factorY, uchar *imageScaled){
+	
+	for (int i = 0; i < sizeY; ++i)
+	{
+		for (int j = 0; j < sizeX; ++j)
+		{
+			for (int k = 0; k < factorY; ++k)
+			{
+				for (int l = 0; l < factorX; ++l)
+				{		//  Offset of rows		offset of duplicate columns   offset of duplicate row/column 
+					imageScaled[(k*sizeX*factorX*3) + (j*3*factorX) + (i*factorY*3*sizeX*factorX)+l*3+0] = image[3*j+(i*sizeX*3)+0];
+					imageScaled[(k*sizeX*factorX*3) + (j*3*factorX) + (i*factorY*3*sizeX*factorX)+l*3+1] = image[3*j+(i*sizeX*3)+1];
+					imageScaled[(k*sizeX*factorX*3) + (j*3*factorX) + (i*factorY*3*sizeX*factorX)+l*3+2] = image[3*j+(i*sizeX*3)+2];
+				}
+
+			}
+		}
+	}
+}

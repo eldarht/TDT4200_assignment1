@@ -22,6 +22,6 @@ From the root folder:
 	- [ ] Flipping image
 	- [ ] Remapping color
 	- [ ] Other
-- [ ] Resize to double the size
+- [X] Resize to double the size
 - [ ] Changing color
 - [X] CMake or makefile
