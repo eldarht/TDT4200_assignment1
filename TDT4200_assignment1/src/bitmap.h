@@ -19,4 +19,12 @@ void readbmp(char *filename, uchar *array);
  */
 void scale(uchar *image, int sizeX, int sizeY, int factorX, int factorY, uchar *imageScaled);
 
+/**
+ * @brief      inverts the colors in the image
+ *
+ * @param      image  The image
+ * @param[in]  sizeX  The image width
+ * @param[in]  sizeY  The image height
+ */
+void invert(uchar *image, int sizeX, int sizeY);
 #endif

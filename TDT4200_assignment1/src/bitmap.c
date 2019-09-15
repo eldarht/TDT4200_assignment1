@@ -64,3 +64,12 @@ void scale(uchar *image, int sizeX, int sizeY, int factorX, int factorY, uchar *
 		}
 	}
 }
+
+void invert(uchar *image, int sizeX, int sizeY){
+
+	for (int i = 0; i < sizeX * sizeY * 3; ++i)
+	{
+		// I have not used .bmp before so i assume the rgb values can be used here as 256 bit colors.
+		image[i] = 255 - image[i]; 
+	}
+}

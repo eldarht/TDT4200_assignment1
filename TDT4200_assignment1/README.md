@@ -17,11 +17,11 @@ From the root folder:
 
 ## Task completion
 
-- [ ] Alteration of choice 
-	- [ ] Inverting color
+- [X] Alteration of choice 
+	- [X] Inverting color
 	- [ ] Flipping image
 	- [ ] Remapping color
 	- [ ] Other
 - [X] Resize to double the size
-- [ ] Changing color
+- [X] Changing color
 - [X] CMake or makefile
